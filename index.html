@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head> 
+  <meta charset="UTF-8">
+  <metawport" content="width=device-width, initial-scale=1.0">
+  <title>Joker</title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap&subset=cyrillic" 
+  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap&subset=cyrillic" 
+  rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./css/animate.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- other blocks appear when dimming : проявляется при затемнении другие блоки-->
+    <div id="layer"></div>
+
+  <div class="conteiner">
+
+    <header class="header">
+      <div class="logo">КиноПульс</div>
+      <form action="" class="search some_div">
+        <input type="search " class="search-input" placeholder="Фильмы, сериалы, актеры">
+        <button class="search-button">
+          <img src="./img/search-icon.svg" alt="search-icon">
+        </button>
+      </form>
+      <div class="user">
+        <button class="button-bookmark">
+          <img src="./img/bookmark-icon.png" alt="bookmark" class="bookmark">
+        </button>
+        <button class="button-avatar">
+          <img src="./img/avatar.bmp" alt="avatar" class="avatar">
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <h1 class="title">Джокер</h1>
+      <small class ="title-en">Joker</small>
+
+      <div class="info">
+        <a data-fancybox href="https://www.youtube.com/watch?v=Xo8i2ZDMlQg" class="play">Смотреть трейлер</a>
+      </div>
+
+      <div class="content">
+        <div class="short-info">
+          <img src="./img/poster.jpeg" alt="poster" class="poster">
+          <button class="button">Буду смотреть</button>
+          <h3 class="actors-title">В главных ролях:</h3> 
+          <ul class="actors-list">
+            <li class="ators-list-item">Хоакин Феникс</li>
+            <li class="ators-list-item">Роберт Де Ниро</li>
+            <li class="ators-list-item">Зази Битц</li>
+            <li class="ators-list-item">Фрэнсис Конрой</li>
+            <li class="ators-list-item">Бретт Каллен</li>
+            <li class="ators-list-item">Шей Уигэм</li>
+            <li class="ators-list-item">Билл Кэмп</li>
+            <li class="ators-list-item">Гленн Флешлер</li>
+            <li class="ators-list-item">Ли Гилл</li>
+            <li class="ators-list-item">Джош Пэйс</li>
+          </ul>
+        </div>
+        <div class="full-info">
+          <nav class="tabs">
+            <a href="#about" class="tabs-item tabs-item-active">Описание</a>
+            <a href="#reviews" class="tabs-item">Рецензии</a>
+            <a href="#actors" class="tabs-item">Актеры</a>
+            <a href="#awards" class="tabs-item">Награды</a>
+            <a href="#data" class="tabs-item">Факты</a>
+            <a href="#sites" class="tabs-item">Сайты</a>
+          </nav>
+
+          <div class="full-content">
+            <div class="tabs-content visible animated fadeInRight" id='about'>
+
+                <table class="table">
+                  <tr>
+                    <td class="orange">год</td>
+                    <td>
+                      <a href="#" >2019</a> 
+                    </td>
+                  </tr>
+                  <tr>
+                      <td class="orange">страна</td>
+                      <td>
+                        <a href="#">США</a>,
+                        <a href="#">Канада</a>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td class="orange">слоган</td>
+                    <td style="color: #555">«Сделай счастливое лицо»</td>
+                  </tr>
+                  <tr>
+                    <td class="orange">режиссер</td>
+                    <td><a href="#">Тодд Филлипс</a></td>
+                  </tr>
+                  <tr>
+                    <td class="orange">сценарий</td>
+                    <td>
+                        <a href="#">Тодд Филлипс</a>, 
+                        <a href="#">Скотт Сильвер</a>,  
+                        <a href="#">Боб Кейн</a>, 
+                        <a href="#">...</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="orange">продюсер</td>
+                    <td>
+                      <a href="#">Ричард Баратта</a>,
+                      <a href="#">Брюс Берман</a>, 
+                      <a href="#">Джейсон Клот</a>,
+                      <a href="#">...</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="orange">оператор</td>
+                    <td> <a href="#">Лоуренс Шер</a> </td>
+                  </tr>
+                  <tr>
+                    <td class="orange">композитор</td>
+                    <td> <a href="#">Хильдур Гуднадоуттир</a> </td>
+                  </tr>
+                  <tr>
+                    <td class="orange">художник</td>
+                    <td> <a href="#">Марк Фридберг</a>,  
+                      <a href="#">Лора Боллинджер</a>,  
+                      <a href="#">Марк Бриджес</a>, 
+                      <a href="#">...</a>
+                    </td>
+                  </tr> 
+                  <tr>
+                      <td class="orange">монтаж</td>
+                      <td> <a href="#">Джефф Грот</a></td>
+                  </tr>
+                  <tr>
+                    <td class="orange">жанр</td>
+                    <td>
+                      <a href="#">триллер</a>,
+                      <a href="#">драма</a>,
+                      <a href="#">криминал</a>,
+                      <a href="#">...</a>
+                    </td>
+                  </tr>
+                  <tr>
+                      <td class="orange">бюджет</td>
+                      <td> <a href="#" title="">$55&nbsp;000&nbsp;000</a> </td>
+                  </tr>
+                  <tr>
+                      <td class="orange">сборы в США</td>
+                      <td> <a href="#" title="">$335&nbsp;451&nbsp;311</a> </td>
+                  </tr>
+                  <tr>
+                      <td class="orange">сборы в мире</td>
+                      <td>
+                        <a href="#">+&nbsp;$738&nbsp;800&nbsp;000&nbsp;=&nbsp;$1&nbsp;074&nbsp;251&nbsp;311</a>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="orange">сборы в России</td>
+                      <td><a href="#" title="">$31&nbsp;418&nbsp;225</a></td>
+                  </tr>
+                  <tr>
+                      <td class="orange">зрители</td>
+                      <td>
+                        <img src="https://st.kp.yandex.net/images/flags/flag-2.gif" 
+                        alt="Россия" width="16" height="11"> &nbsp;7.12 млн
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="orange">премьера (мир)</td>
+                      <td>
+                        <a href="#" title="">31 августа 2019</a>, 
+                        <a href="#" title="">...</a> 
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="orange">премьера (РФ)</td>
+                      <td>
+                        <a href="#">3 октября 2019</a>,                             
+                        «<a href="#">Каро-Премьер</a>»  
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="orange">цифровой релиз</td>
+                      <td>
+                        <a href="#">27 декабря 2019</a>,
+                        «<a href="#">Warner Bros.</a>»
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="orange">возраст</td>
+                      <td> 
+                        <div class="age-limit"></div>
+                        <span class="age">&nbsp;зрителям, достигшим 18 лет</span>
+                      </td>
+                      
+                  </tr>
+                  <tr>
+                      <td class="orange">рейтинг MPAA</td>
+                      <td >
+                        <img src="https://st.kp.yandex.net/images/mpaa/R.gif"
+                        alt="рейтинг R" height="11" border="0">
+                        <span class="age">&nbsp;лицам до 17 лет обязательно присутствие взрослого</span>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td class="orange">время</td>
+                    <td>122 мин / 02:02</td>
+                    <td></td>
+                  </tr>
+                </table>
+
+                <p class="text">
+                  Готэм, начало 1980-х годов. Комик Артур Флек живет с больной
+                  матерью, которая с детства учит его «ходить с улыбкой». 
+                  Пытаясь нести в мир хорошее и дарить людям радость, Артур 
+                  сталкивается с человеческой жестокостью и постепенно приходит
+                  к выводу, что этот мир получит от него не добрую улыбку, 
+                  а ухмылку злодея Джокера.
+                </p>
+                <p class="text">
+                  Фильм является десятым по счёту фильмом из 
+                  Расширенной вселенной DC. Режиссёром и сценаристом фильма 
+                  выступит Мэтт Ривз, а главную роль исполнит Роберт Паттинсон
+                </p>
+
+            </div>
+
+            <div class="tabs-content animated fadeInRight" id="reviews">
+              <p class="text">Тут появяться рецензии</p>
+            </div>
+
+            <div class="tabs-content animated fadeInRight" id="actors">
+              <p class="text">Тут появяться актеры</p>
+            </div>
+
+            <div class="tabs-content animated fadeInRight" id="awards">
+              <p class="text">Тут появяться награды</p>
+            </div>
+
+            <div class="tabs-content animated fadeInRight" id="data">
+              <ul>
+                <li class="text"><p class="li-text">
+                  Боссы студии хотели, чтобы роль Джокера исполнил 
+                  Леонардо ДиКаприо. Среди других потенциальных
+                  исполнителей этой роли были Брэдли Купер, Джейк 
+                  Джилленхол, Адам Драйвер, Джеймс Франко, Уилл 
+                  Поултер, Дэн Стивенс, Пол Дано, Калеб Лэндри Джонс,
+                  Иван Реон и Билл Скарсгард.
+                </p></li>
+                <li class="text"><p class="li-text">
+                  Для роли Джокера Хоакин Феникс похудел на 24 
+                  килограмма и месяцами репетировал разные виды смеха.
+                </p></li>
+                <li class="text"><p class="li-text">
+                  На Венецианском кинофестивале 
+                  демонстрировалась версия фильма продолжительностью 
+                  118 минут.
+                </p></li>
+                <li class="text"><p class="li-text">Меньше чем за месяц с начала 
+                  мирового проката «Джокер» стал самым кассовым фильмом 
+                  с рейтингом R в истории.
+                </p></li>
+                <li class="text"><p>
+                  Шутка Джокера: «Когда я был маленьким мальчиком и говорил
+                  людям, что собираюсь стать комиком, все смеялись надо мной,
+                  а теперь никто не смеётся», вдохновлена высказыванием 
+                  покойного британского комика Боба Монкхауса: «Люди 
+                  смеялись надо мной, когда я говорил, что хочу стать комиком. 
+                  Теперь они не смеются».
+                  </p></li>
+                <li class="text"><p>
+                При подготовке к роли Джокера Хоакин Феникс изучил движения и
+                мимику звезд немого кино Бастера Китона и Рэя Болджера.
+                </p></li>
+                <li class="text"><p>
+                  Чтобы сохранить производство фильма в секрете, во время 
+                  съёмок рабочим названием картины было «Ромеро». Возможно, 
+                  это отсылка к Сесару Ромеро, который тоже сыграл Джокера.
+                </p></li>
+                <li class="text"><p>
+                  Готовясь к роли, Хоакин Феникс читал про различные расстройства 
+                  личности. Он хотел показать Джокера так, чтобы даже психиатры не 
+                  смогли бы определить, что с ним.
+                </p></li>
+
+              </ul>
+            </div>
+            
+            <div class="tabs-content animated fadeInRight" id="sites">
+              <p class="text">Тут появяться сайты</p>
+            </div>
+
+            <div class="subscribe">
+              <h3 class="subscribe-title">Подпешись на обновления</h3>
+                <form action="#" class="subscribe-form">
+                  <input type="text" class="subscribe-input" placeholder="Ваш Email">
+                  <button class="subscribe-button">
+                    <img src="./img/check.svg" alt="check">
+                  </button>
+                </form>
+              <a href="#" class="banner">
+                <img src="./img/banner.jpg" alt="">
+              </a>
+            </div>
+          </div>
+
+        </div>
+              <!-- /.short-info -->
+
+      </div>
+      <!-- /.content -->
+    </main>
+
+  </div>
+  <!-- /.conteiner -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="./js/jquery.fancybox.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
