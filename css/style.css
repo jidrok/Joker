@@ -10,6 +10,7 @@ body{
 .img-back{
   position: absolute;
   left: 0;
+  right: 0;
   width: 100%;
   z-index: -1000;
   opacity: 0.2;
@@ -388,6 +389,9 @@ td, tr, table{
 @media (max-width:768px){
   .conteiner{
     width: 540px;
+  }
+  .img-back{
+    width: 210%;
   }
   .tabs-item, .tabs-item-active{
     flex-basis: 40%;
