@@ -1,10 +1,18 @@
 body{
-  background-color: #050505;
   color: white;
   font-family: 'Roboto', sans-serif;
-  background-image: url('..//img/main-bg.jpg');
+  background-color: #00000067;
+  background-image: linear-gradient(180deg,rgb(13, 19, 22) 724px,#000000 89%);
+  background-position: center 100%  top;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-size: contain
+}
+.img-back{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: -1000;
+  opacity: 0.2;
 }
 
 .conteiner{
@@ -144,7 +152,7 @@ body{
   content: '';
   width: 30px;
   height: 30px;
-  background-image: url(/img/play.svg);
+  background-image: url(img/play.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   margin-right: 15px;
@@ -153,7 +161,7 @@ body{
   content: '';
   width: 30px;
   height: 30px;
-  background-image: url(/img/play.svg);
+  background-image: url(img/play.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   margin-left: 15px;
@@ -256,7 +264,7 @@ td, tr, table{
   border-collapse: collapse;
 }
 .age-limit {
-  background-image: url(/img/18.gif);
+  background-image: url(img/18.gif);
   width: 18px;
   height: 12px;
   display: block;
@@ -387,6 +395,7 @@ td, tr, table{
   .tabs-content{
     margin-right: 0;
   }
+}
 @media (max-width:578px) {
   .conteiner{
     width: 90%;
